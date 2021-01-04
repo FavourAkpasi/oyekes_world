@@ -1,0 +1,354 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    
+}
+a{
+    color: none;
+}
+
+/* top nav bar*/
+.TopNavBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+}
+
+.NavList{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.NavList a{
+   padding: 10px;
+   margin: 0px 10px;
+   text-decoration: none;
+   color: black;
+   font-weight: bold;
+}
+a:hover{
+    color: hotpink;
+}
+
+.searchbar{
+    width: 700px;
+    height: 40px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 0;
+    margin-right: 0;
+    border: none;
+    background-color: #e0dede;
+}
+
+::placeholder{
+    padding: 10px;
+
+}
+
+.searchbutton{
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 0;
+    margin-left: 0;
+    background-color: #e0dede;  
+    height: 40px;
+    float: right;
+    border: none;
+    width: 30px;
+}
+
+/* navigation */
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background-color: gray;
+}
+.navigation li{
+    list-style-type: none;
+}
+.navigation li a{
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+}
+.navigation li a:hover{
+    color: black;
+    background-color: whitesmoke;
+}
+
+/* bar */
+.bar{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: #fceef5;
+}
+
+.minibar{
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.minibar h4{
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.minibar p{
+    color: grey;
+    margin-bottom: 0;
+}
+.minibar div{
+    margin-left: 20px;
+}
+.minibar i{
+    color: #ea86b6;
+}
+
+/* secttion */
+
+.fabrics{
+    width: 1200px;
+    height: 500px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.fabrics img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.writeup{
+    width: 30%;
+    height: 70%;
+    border: 5px solid white;
+    position: absolute;
+    z-index: 2;
+    right: 35%;
+    top: 15%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.writeup h3{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Zilla Slab Highlight', cursive;
+
+}
+.writeup p{
+    color: black;
+    background-color: hotpink;
+    margin: 5px auto;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.hair{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    height: 500px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.hairimage{
+    width: 33.33%;
+    height: 100%;
+    margin: 0;
+}
+
+.hairimage img{
+    width: 100%;
+    height: 100%;
+}
+.bar2{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: none;
+    margin: 20px;
+}
+.bar2 a{
+    text-decoration: none;
+    color: black;
+}
+.bar2 a:hover{
+    color: hotpink;
+}
+
+.minibar2{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.minibar2 h4{
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.minibar2 p{
+    color: grey;
+    margin-bottom: 0;
+}
+.minibar2 div{
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+}
+.minibar2 i{
+    color: #ea86b6;
+}
+.socials{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+.socials a{
+    margin: 20px;
+    color: black;
+}
+.socials a:hover{
+    color: hotpink;
+}
+footer{
+    height: 200px;
+    width: 100%;
+    justify-content: start;
+    display: flex;
+    background-color: #eeeeee;
+}
+footer div{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+footer h5{
+    font-weight: bold;
+}
+footer a{
+    color: grey
+}
+footer a:hover{
+    color: hotpink;
+    text-decoration: none; 
+}
+
+/*hair page*/
+.container{
+    margin: auto;
+    width: 80%;
+}
+.product{
+    text-align: center;
+}
+
+/* registration/sign in */
+
+.reg{
+    margin: auto;
+    width: 50%;
+    background-color: #f1f1f1;
+}
+
+.regBody{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: bold;
+}
+.regBody P{
+    margin-top: 2rem;
+}
+.regLogo{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+.regTop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.regTop1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid  black;
+    border-bottom: none;
+    width: 50%;
+    height: 50px;
+    margin: 2rem 0 0 1rem;
+}
+.regTop2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid 2px;
+    border-top:none;
+    border-right: none;
+    width: 50%;
+    height: 50px;
+    margin: 2rem 1rem 0 0;
+    color: grey;
+}
+.regButtons{
+    display: flex;
+    justify-content: center;
+}
+.regButtons button{
+    width: 12rem;
+    margin: 0.5rem;   
+}
+.regButtons button i{
+    margin-right: 2rem;
+}
+.quote1{
+    margin: 2rem;
+    font-size: 0.9rem;
+    text-align: center;
+}
+hr{
+    width: 5rem;
+    margin: auto 0 auto 0;
+}
+
+.dimacation{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

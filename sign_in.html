@@ -18,32 +18,37 @@
   </head>
 <body>
     <div class="reg">
-      <div class="regLogo"><img src="images/logo.png"  width="180px" alt=""></div>
+      <div class="regLogo"><a href="index.html"><img src="images/logo.png"  width="180px" alt=""></a></div>
       <div class="regBody">
           <div class="regTop">
-              <p class="regTop1">NEW TO OYEKES WORLD?</p>
-              <P class="regTop2">ALREADY REGISTERED?</P>
+              <p class="regTop2"><a href="sign_up.html"> NEW TO OYEKES WORLD?</a></p>
+              <P class="regTop1">ALREADY REGISTERED?</P>
           </div>
-          <p> SIGN UP WITH...</p>
+          <p> SIGN IN WITH EMAIL</p>
       </div>
-      <div class="regButtons">
-        <a href="#"><button type="button" class="btn btn-outline-dark"><i class="fab fa-google"></i>GOOGLE</button></a>
-        <a href="#"><button type="button" class="btn btn-outline-dark"><i class="fab fa-apple"></i>APPLE ID</button></a>
-      </div>
-      <div class="regButtons">
-        <a href="#"><button type="button" class="btn btn-outline-dark"><i class="fab fa-twitter"></i>TWITTER</button></a>
-        <a href="#"><button type="button" class="btn btn-outline-dark"><i class="fab fa-facebook"></i>FACEBOOK</button></a>
-      </div>
-      <P class="quote1">Signing up with social is super quick and easy. No extra passwords to remember - no brain fail. Not to worry, we'd never share any of your data or post anything on your behalf #fingerscrossed</P>
-      <div class="dimacation">
-      <hr>
-      <p>OR</p>
-      <hr>
-      </div>
-    </div>
-    
-      
-
+      <div class="regForm">
+        <form action="/action_page.php" method="get">
+          <label for="mail">EMAIL ADDRESS:</label>
+          <input type="email" id="email" name="email">
+          <label for="password">PASSWORD</label>
+          <input type="password" id="password" name="password">
+          <p class="areaDescreption"><a href=""> forgot password?</a></p>
+        </form> <br>
+        <input class="btn btn-dark" type="submit" value="SIGN IN"><br> <br> 
+        <div class="dimacation">
+            <hr>
+            <p>OR</p>
+            <hr>
+        </div>
+        <div class="regBody"> <p>SIGN IN WITH...</p> </div>
+        <div class="regButtons">
+            <a href="#"><button type="button" class="btn btn-outline-dark"><i class="fab fa-google"></i>GOOGLE</button></a>
+            <a href="#"><button type="button" class="btn btn-outline-dark"><i class="fab fa-apple"></i>APPLE ID</button></a>
+          </div>
+          <div class="regButtons">
+            <a href="#"><button type="button" class="btn btn-outline-dark"><i class="fab fa-twitter"></i>TWITTER</button></a>
+            <a href="#"><button type="button" class="btn btn-outline-dark"><i class="fab fa-facebook"></i>FACEBOOK</button></a>
+          </div>
 
 
 

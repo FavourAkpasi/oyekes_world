@@ -18,44 +18,106 @@
   </head>
 <body>
     <div class="regLogo"><a href="index.html"><img src="images/logo.png"  width="180px" alt=""></a></div>
-    <h1>MY ACCOUNT</h1>
-    <div class="navigation">
-        <li><a href="#">ACCOUNT OVERVIEW</a></li>
-        <li><a href="#">ADDRESS</a></li>
-        <li><a href="#">PAYMENTS</a></li>
-        <li><a href="#">NEED HELP</a></li>
-        <li><a href="#contactUs">SIGN OUT</a></li>
-    </div>
-    <div class="regForm">
-        <form action="/action_page.php" method="get">
-          <label for="firstName">FIRST NAME:</label>
-          <input type="text" id="firstName" name="firstName">
-          <label for="lastName">LAST NAME:</label>
-          <input type="text" id="lastName" name="lastName">
-          <label for="mail">EMAIL ADDRESS:</label>
-          <input type="email" id="email" name="email">
-          <label for="password">PASSWORD</label>
-          <input type="password" id="password" name="password">
-          <label for="dateOfBirth">DATE OF BIRTH:</label>
-          <input type="date" id="date" name="date">
-          <label for="interest">MOSTLY INTERESTED IN:</label>
-        </form>
-        <div class="interest">
-          <label for="hairRadio">HAIR</label>
-          <input type="radio" name="interest" id="hairRadio" value="HAIR">
-          <label for="fabricsRadio">FABRICS</label>
-          <input type="radio" name="interest" id="fabricsRadio" value="FABRICS">
+    <div class="container">
+        <h1 class="regLogo">MY ACCOUNT</h1>
+        <br>
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs justify-content-center" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#home">OVERVIEW</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#menu1">ADDRESS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#menu2">PAYMENTS</a>
+          </li>
+        </ul>
+      
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div id="home" class="container tab-pane active"><br>
+            <h3>ACCOUNT OVERVIEW</h3>
+            <div class="regForm">
+                <form action="/action_page.php" method="get">
+                  <label for="firstName">FIRST NAME:</label>
+                  <input type="text" id="firstName" name="firstName">
+                  <label for="lastName">LAST NAME:</label>
+                  <input type="text" id="lastName" name="lastName">
+                  <label for="mail">EMAIL ADDRESS:</label>
+                  <input type="email" id="email" name="email">
+                  <p class="areaDescription">order confirmation will be sent to this email</p>
+                  <label for="password">PASSWORD</label>
+                  <input type="password" id="password" name="password">
+                  <label for="dateOfBirth">DATE OF BIRTH:</label>
+                  <input type="date" id="date" name="date">
+                  <label for="interest">MOSTLY INTERESTED IN:</label>
+                </form>
+                <div class="interest">
+                  <label for="hairRadio">HAIR</label>
+                  <input type="radio" name="interest" id="hairRadio" value="HAIR">
+                  <label for="fabricsRadio">FABRICS</label>
+                  <input type="radio" name="interest" id="fabricsRadio" value="FABRICS">
+                </div>
+                <input class="btn btn-dark " type="submit" value="UPDATE YOUR ACCOUNT">
+              </div>
+          </div>
+          <div id="menu1" class="container tab-pane fade"><br>
+            <h3>ADDRESS & CONTACT</h3>
+            <div class="md-form mb-5">
+                <input type="text" id="address" class="form-control" placeholder="1234 Main St">
+                <label for="address" class="">Address</label>
+              </div>
+              <div class="md-form mb-5">
+                <input type="text" id="address-2" class="form-control" placeholder="Apartment or suite">
+                <label for="address-2" class="">Apartment</label>
+              </div>
+              <div class="md-form mb-5">
+                <input type="number" id="phone" class="form-control" placeholder="phone number">
+                <label for="phone" class="">Phone Number</label>
+              </div>
+            <p>THIS IS YOUR DEFAULT SHIPPING ADDRESS.</p>
+          </div>
+          <div id="menu2" class="container tab-pane fade"><br>
+            <h3>PAYMENTS METHODS</h3>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="cc-name">Name on card</label>
+                  <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                  <small class="text-muted">Full name as displayed on card</small>
+                  <div class="invalid-feedback">
+                    Name on card is required
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="cc-number">Card number</label>
+                  <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                  <div class="invalid-feedback">
+                    Credit card number is required
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3 mb-3">
+                  <label for="cc-expiration">Expiration</label>
+                  <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                  <div class="invalid-feedback">
+                    Expiration date required
+                  </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="cc-expiration">CVV</label>
+                  <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                  <div class="invalid-feedback">
+                    Security code required
+                  </div>
+                </div>
+              </div>
+              <P>THIS IS YOUR DEFAULT PAYMENT METHOD</P>
+          </div>
         </div>
-        
-        <input class="btn btn-dark " type="submit" value="UPDATE YOUR ACCOUNT">
       </div>
-
-
-
-
-
-
-
+      
 
 
 <!-- Option 2: jQuery, Popper.js, and Bootstrap JS -->

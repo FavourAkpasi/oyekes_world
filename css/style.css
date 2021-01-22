@@ -9,7 +9,6 @@ a{
     color: none;
 }
 
-/* top nav bar*/
 .TopNavBar{
     display: flex;
     justify-content: center;
@@ -17,6 +16,7 @@ a{
     width: 100%;
     height: 80px;
     z-index: 1;
+    padding: 2rem;
 }
 
 .NavList{
@@ -25,11 +25,12 @@ a{
     align-items: center;
     justify-content: center;
     margin-bottom: 0;
+    width: 100%;
 }
 
 .NavList a{
-   padding: 10px;
-   margin: 0px 10px;
+   padding: 1rem;
+   margin: 0;
    text-decoration: none;
    color: black;
    font-weight: bold;
@@ -39,7 +40,7 @@ a:hover{
 }
 
 .searchbar{
-    width: 700px;
+    width: 90%;
     height: 40px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -54,6 +55,13 @@ a:hover{
 
 }
 
+.TopNavBar form{
+    width: 100%;
+}
+
+#searchOverlay, .searchbutton2{
+    display: none;
+}
 .searchbutton{
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
@@ -63,7 +71,7 @@ a:hover{
     height: 40px;
     float: right;
     border: none;
-    width: 30px;
+    width: 10%;
 }
   
   .dropdown:hover .dropdown-content {
@@ -444,3 +452,110 @@ hr{
     align-items: center;
     text-align: center;
 }
+
+
+
+
+/* media q*/
+
+@media (max-width: 1300px){
+    .minibar img{
+        width: 30%;
+    }
+    .minibar div{
+        font-size: x-small;
+    }
+    .fabrics, .hair{
+        width: 750px;
+    }
+    .writeup{
+        width: 50%;
+        left: 25%;
+    }
+    .writeup h3{
+        color: #ffe9d6;
+    }
+
+}
+
+@media (max-width: 750px){
+    .TopNavBar .search1{
+        display: none;
+    }
+    .overlay {
+        height: 20%;
+        width: 100%;
+        display: none;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0, 0.9);
+      }
+      
+      .overlay-content {
+        position: relative;
+        top: 46%;
+        width: 80%;
+        text-align: center;
+        margin-top: 30px;
+        margin: auto;
+      }
+      
+      .overlay .closebtn {
+        position: absolute;
+        top: 25px;
+        right: 20px;
+        font-size: 60px;
+        cursor: pointer;
+        color: white;
+      }
+      
+      .overlay .closebtn:hover {
+        color: #ccc;
+      }
+      
+      .overlay input[type=text] {
+        padding: 15px;
+        font-size: 17px;
+        border: none;
+        float: left;
+        width: 80%;
+        background: white;
+      }
+      
+      .overlay button {
+        float: left;
+        width: 20%;
+        padding: 15px;
+        background: #ddd;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .overlay button:hover {
+        background: #bbb;
+      }
+      .searchbutton2{
+          display: inline-block;
+          padding: 0.5rem;
+          background-color: white;
+          border: none;
+       }
+       .minibar img{
+        width: 30%;
+        }
+        .minibar div{
+            font-size: x-small;
+        }
+        .fabrics, .hair{
+            width: 600px;
+        }
+        .writeup{
+            width: 50%;
+            left: 25%;
+        }
+        .writeup h3{
+            color: #ffe9d6;
+        }
+    }

@@ -51,7 +51,7 @@ a:hover{
 }
 
 ::placeholder{
-    padding: 10px;
+    padding: 1rem;
 
 }
 
@@ -315,6 +315,16 @@ footer a:hover{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 
 }
+h3{
+    font-family: 'Yeseva One', cursive;
+}
+h4{
+   
+    font-family: 'Philosopher', sans-serif;
+}
+p{
+    font-family: 'Alice', serif;
+}
 
 /* registration/sign in */
 
@@ -478,9 +488,15 @@ hr{
 
 }
 
-@media (max-width: 750px){
+@media (max-width: 700px){
     .TopNavBar .search1{
         display: none;
+    }
+    .TopNavBar{
+        padding: 0.5rem;
+    }
+    .NavList a{
+        padding: 0.5rem;
     }
     .overlay {
         height: 20%;
@@ -542,20 +558,29 @@ hr{
           background-color: white;
           border: none;
        }
+       .navigation{
+           display: none;
+       }
+       .minibarx{
+           display: none;
+       }
        .minibar img{
-        width: 30%;
+        width: 50%;
         }
         .minibar div{
             font-size: x-small;
         }
         .fabrics, .hair{
-            width: 600px;
+            width: 100%;
         }
         .writeup{
-            width: 50%;
-            left: 25%;
+            width: 80%;
+            left: 10%;
         }
         .writeup h3{
             color: #ffe9d6;
+        }
+        .footer1{
+            display: none;
         }
     }

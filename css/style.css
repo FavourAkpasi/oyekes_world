@@ -640,4 +640,21 @@ hr{
         .regButtons button{
             width: 8rem;
             margin: 0.2rem;
+        }
+        .cartcard{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .profiletab h4{
+            font-size: small;
+        }
+        .profilelogo{
+            max-width: 100vw;
+        }
+        .profilecontainer{
+            max-width: 100%;
+        }
     }

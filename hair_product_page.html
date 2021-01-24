@@ -11,25 +11,53 @@
     <script src="https://kit.fontawesome.com/a5dc29ca0c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css"> 
     <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Philosopher:wght@700&family=Yeseva+One&display=swap" rel="stylesheet">
   
     
 
     <title>OYEKE'S WORLD!</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="TopNavBar">
-      <a class="logo" href="index.html"><img src="images/logo.png" width="180px" alt="logo"></a>
-      
+      <a class="logo" href="index.html"><img src="images/logo.png" width="100px" alt="logo"></a>
       <ul class="NavList">
         <li><a href="hair.html">HAIR</a></li>
         <li><a href="fabrics.html">FABRICS</a></li>
-        <form class="" action="">
+        <form class="search1" action="action_page.php">
           <input class="searchbar" type="text" placeholder="search the shop">
           <button class="searchbutton" type="submit"><i class="fas fa-search" ></i></button>
         </form>
-        <li><a href="#"><i class="fas fa-user fa-lg"></i></a></li>
+        <div id="searchOverlay" class="overlay">
+          <span class="closebtn" onclick="closeSearch()" title="Close Overlay">x</span>
+          <div class="overlay-content">
+            <form action="action_page.php">
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit"><i class="fa fa-search fa-lg"></i></button>
+            </form>
+          </div>
+        </div>
+        <button class="openBtn searchbutton2" onclick="openSearch()"><i class="fas fa-search fa-lg" ></i></button>
+
+<script>
+function openSearch() {
+  document.getElementById("searchOverlay").style.display = "block";
+}
+
+function closeSearch() {
+  document.getElementById("searchOverlay").style.display = "none";
+}
+</script>
+        <div class="dropdown">
+          <li><a href="#" class="dropbtn"><i class="fas fa-user fa-lg"></i></a></li>
+          <div class="dropdown-content">
+            <a href="sign_in.html">Sign in</a>
+            <a href="sign_up.html">sign up</a>
+            <a href="profile.html">My account</a>
+          </div>
+        </div>  
         <li><a href="#"><i class="fas fa-heart fa-lg"></i></a></li>
-        <li><a href="#"><i class="fas fa-shopping-cart fa-lg"></i></a></li>
+        <li><a href="cart.html"><i class="fas fa-shopping-cart fa-lg"></i></a></li>
       </ul>
     </nav>
 
@@ -51,7 +79,7 @@
           </div>
       </div>
       
-      <div class="minibar">
+      <div class="minibar minibarx">
         <img src="images/atm.gif" width="80" height="72" alt="">
         <div>
           <h4>Factory Price</h4>
@@ -68,17 +96,17 @@
       </div>
     </div>
 
-    <div class="container my-5 py-5 z-depth-1">
+    <div class="container my-1 py-1 z-depth-1">
 
 
-      <div class="container my-5 py-5 z-depth-1">
+      <div class="container my-1 py-1 z-depth-1">
 
 
         <!--Section: Content-->
         <section class="text-center">
       
           <!-- Section heading -->
-          <h3 class="font-weight-bold mb-5">Details</h3>
+          <h3 class="font-weight-bold mb-5">Product Details</h3>
       
           <div class="row">
             <div class="col-lg-6">
@@ -118,7 +146,7 @@
               <!--/.Carousel Wrapper-->
               
               <div class="row mb-4">
-                <div class="col-md-12">
+                <div class="col-md-6">
                   <div id="mdb-lightbox-ui"></div>
                   <div class="mdb-lightbox no-margin">
                     <figure class="col-md-4">
@@ -221,7 +249,7 @@
     </div>
   
     <footer>
-        <div>
+        <div class="footer1">
           <h5>HELP & INFORMATION</h5>
           <a href="#"><P>Help</P></a>
           <a href="#"><p>Track Order</p></a>

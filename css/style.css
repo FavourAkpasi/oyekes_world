@@ -8,7 +8,9 @@
 a{
     color: none;
 }
-
+.altlogo{
+    display: none;
+}
 .TopNavBar{
     display: flex;
     justify-content: center;
@@ -27,9 +29,11 @@ a{
     margin-bottom: 0;
     width: 100%;
 }
+.NavList li{
+    padding: 1rem;
+}
 
 .NavList a{
-   padding: 1rem;
    margin: 0;
    text-decoration: none;
    color: black;
@@ -462,6 +466,10 @@ hr{
     align-items: center;
     text-align: center;
 }
+.mdb-lightbox{
+    display: flex;
+    width: 100%;
+}
 
 
 
@@ -485,10 +493,12 @@ hr{
     .writeup h3{
         color: #ffe9d6;
     }
-
+    .NavList li{
+        padding: 0.5rem;
+    }
 }
 
-@media (max-width: 700px){
+@media (max-width: 750px){
     .TopNavBar .search1{
         display: none;
     }
@@ -583,4 +593,51 @@ hr{
         .footer1{
             display: none;
         }
+        .reg{
+            width: 80%;
+        }
+        .regForm form input{
+            width: 20rem;
+            height: 2rem;
+        }
+        .regButtons button{
+            width: 8rem;
+            margin: 0.4rem;
+    }
+@media (max-width: 450px){
+        .TopNavBar{
+            font-size: small;
+            padding: 1rem;
+            border-bottom: 2px solid black;
+        }
+        .NavList a{
+            padding: 0.2rem;
+        }
+        .minibar h4{
+            font-size: small;
+        }
+        .minibar p{
+            font-size: smaller;
+        }
+        .hairimage{
+            width: 50%;
+            height: 100%;
+            margin: 0;
+        }
+        .hairimagex{
+            display: none;
+        }
+        .bar2{
+            height: 200px;
+        }
+        .reg{
+            width: 90%;
+        }
+        .regForm form input{
+            width: 15rem;
+            height: 2rem;
+        }
+        .regButtons button{
+            width: 8rem;
+            margin: 0.2rem;
     }
